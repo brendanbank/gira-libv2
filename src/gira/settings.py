@@ -11,9 +11,10 @@ log = logging.getLogger(__name__)
 
 
 conf =  { 'DEBUG': bool(strtobool(environ.get('DEBUG', 'False'))),
-         'HOSTNAME': environ.get('HOSTNAME', '10.0.60.101'),
-         'USERNAME': environ.get('USERNAME', 'Administrator'),
-         'PASSWORD': environ.get('PASSWORD', 'Administrator'),
+         'HOSTNAME': environ.get('HOSTNAME'),
+         'USERNAME': environ.get('USERNAME'),
+         'PASSWORD': environ.get('PASSWORD'),
+         'SQLALCHEMY_DATABASE_URI': environ.get('SQLALCHEMY_DATABASE_URI'),
          }
 
 class Settings(object):
@@ -21,10 +22,12 @@ class Settings(object):
 
     def __init__(self):
         self._config = conf
+        self.DEBUG = conf['DEBUG']
+        self.set_debug()
 
         for key, value in conf.items():
+            log.debug(f'set {key} = {value}')
             setattr(self, key, value)
-        self.set_debug()
         
         log.debug(f'{__name__} loaded')
         

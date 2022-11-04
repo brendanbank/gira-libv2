@@ -25,38 +25,100 @@ DeviceTypes = {
         "GET_URL": 'https://{host}/api/v2/values/%s?token={token}',
         "PUT_URL": 'https://{host}/api/v2/values?token={token}',
         }
-    }
+    }    
 
 class GiraServer(object):
 
-    def __init__(self, hostname=None, username=None, password=None, cookie=None):
+    def __init__(self, hostname=None, username=None, password=None, cookie=None, vpn=True, cache=None):
+               
+        print (cache)
+        if (cache == None):
+            raise ValueError(f'cache cannot not be None')
+            
+        self.cache=cache
+        
+        
+        cache.set_ignore(['username','password'])
+        
         log.debug(f'{__name__} started')
 
-        self.hostname = hostname or gira_settings.get_property('HOSTNAME')
-        self.username = username or gira_settings.get_property('USERNAME')
-        self.password = password or gira_settings.get_property('PASSWORD')
+        self.cache.hostname = hostname or gira_settings.get_property('HOSTNAME')
+        self.cache.username = username or gira_settings.get_property('USERNAME')
+        self.cache.password = password or gira_settings.get_property('PASSWORD')
 
-        self.DEVICETYPE = None
-        self.DEVICEURL = None
-        self.cookie = cookie
-        self.name = f'de.python.{uuid.getnode()}.{socket.gethostname()}' 
+        
+        self.DEVICETYPE = self.DEVICEURLS = None
+        self.cache.cookie = cookie
+        self.cache.name = f'de.python.{uuid.getnode()}.{socket.gethostname()}' 
         self.errors = []
         
-        if self.hostname == None or self.username == None or self.password == None:
+        if self.cache.hostname == None or self.cache.username == None or self.cache.password == None:
             log.critical('Hostname, username and/or password cannot be None')
             return (False)
 
-    def authenticate(self, test_token=False):
+    def vpn_connect(self):
+        # re-login to refresh cookie
+        if self.cache.cookie_jar:
+            return(self.cache.cookie_jar)
+        
+        url = f'https://{self.cache.hostname}/httpaccess.net/{self.cache.cookie}/'
+        
+        login_request = requests.get(url)
+        cookies = requests.utils.dict_from_cookiejar(login_request.cookies)
+        self.cache.cookie_jar = cookies
+        return cookies
+
+    def invalidate_cache(self):
+        if (self.cache):
+            self.cache.invalidate()
+        
+    def version(self):
+        
+        
+        version = self.cache.config_version
+        if (version):
+            log.debug(f'config_version found in cache {version}')
+            return(version)
+
+        
+        if not self.DEVICEURLS and not self.identity():
+            return(False)
+            
+        if not self.cache._token and not self.authenticate():
+            return (False)
+        
+        if not 'CONFIG_URL_UID' in self.DEVICEURLS:
+            log.critical('CONFIG_URL_UID not in devices URLS???')
+            return(False)
+                
+        url = self.DEVICEURLS['CONFIG_URL_UID'].format(host=self.cache.hostname, token=self.cache._token )
+        
+        (json_data, result_code) = self._get(url)
+        
+        if (result_code != 200):
+            return False
+        
+        self.cache.config_version = json_data['uid']
+        return (self.cache.config_version)
+        
+    def authenticate(self):
         
         """authenticate the app at the gira server"""
         
+        if (self.cache._token):
+            log.debug(f'token found in cache {self.cache._token}')
+            return(self.cache._token)
+        
+        if not self.DEVICEURLS:
+            self.identity()
+            
         if not 'AUTHENTICATION_URL' in self.DEVICEURLS:
             log.critical('AUTHENTICATION_URL not in devices URLS???')
             return(False)
         
-        url = self.DEVICEURLS['AUTHENTICATION_URL'].format(host=self.hostname)
+        url = self.DEVICEURLS['AUTHENTICATION_URL'].format(host=self.cache.hostname)
         
-        data = {"client": self.name}
+        data = {"client": self.cache.name}
         
         log.debug(f'post: {data}')
         http_session = requests.Session()
@@ -65,24 +127,23 @@ class GiraServer(object):
         r = http_session.post(url,
                     json=data, headers=Headers,
                     verify=False,
-                    cookies=self.cookie,
-                    auth=HTTPBasicAuth(self.username, self.password))
+                    cookies=self.cache.cookie,
+                    auth=HTTPBasicAuth(self.cache.username, self.cache.password))
 
         if (r.status_code == 201):
-            self._auth = r.json()
-            log.debug(f'received: {self._auth}')
 
-            self._token = self._auth['token']
+            self.cache._token = r.json()['token']
+            log.debug(f'received: {self.cache._token}')
                 
-            return(self._token)
+            return(self.cache._token)
 
         log.critical(f'Error logging into server {url}: {r.json()}')
-        self.errors.append(f'Error logging into server{url}: {r.json()}')
+        self.errors.append(f'Error logging into server{url}: {r.json()} authentication failed')
         return(False)
     
     
     def identity(self):
-        url = IdentityURl.format(host=self.hostname)
+        url = IdentityURl.format(host=self.cache.hostname)
         (jdata, status_code) = self._get(url)
         if status_code != 200:
             return (False)
@@ -105,17 +166,18 @@ class GiraServer(object):
         
         http_session = requests.Session()
         
-        r = http_session.get(url, headers=Headers, verify=False, cookies=self.cookie)
+        r = http_session.get(url, headers=Headers, verify=False, cookies=self.cache.cookie)
         
         if (r.headers['Content-Type'] == 'application/json'):
             if len(r.text) < 500:
-                log.debug('Received status_code: %s with data %s' % (r.status_code, r.json()))
+                log.debug(f'Received status_code: {r.status_code} with data {r.json()}')
             else:
-                log.debug('Received status_code: %s with longdata' % (r.status_code))
+                log.debug(f'Received status_code: {r.status_code}')
             return(r.json(), r.status_code)
-        if (r.status_code < 300):
-            log.debug('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
-        else:
+        
+        log.debug(f'Received status_code: {r.status_code} with non json data and data: {r.text}')
+        
+        if not (r.status_code < 300):
             log.error('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
             self.errors.append('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
 
