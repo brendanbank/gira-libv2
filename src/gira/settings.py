@@ -1,12 +1,12 @@
 from os import environ, path
 import logging, sys
-from dotenv import load_dotenv
 from distutils.util import strtobool
 
 
+from dotenv import load_dotenv
+load_dotenv()
 
 basedir = path.abspath(path.dirname(__file__))
-load_dotenv(path.join(basedir, '.env'))
 log = logging.getLogger(__name__)
 
 
