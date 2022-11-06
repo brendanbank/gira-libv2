@@ -19,11 +19,10 @@ if __name__ == '__main__':
     log.debug(f'started')
     
     from gira.servercache import CacheObject
-    cache = CacheObject(dburi=environ.get('SQLALCHEMY_DATABASE_URI'), instance=environ.get('HOSTNAME'))
-    cache.invalidate()
+    cache = CacheObject(dburi=environ.get('SQLALCHEMY_DATABASE_URI'), instance=environ.get('INSTANCE_NAME'))
+    # cache.invalidate()
 
-    vpn = 'https://http.httpaccess.net/GIS1YYYCJD/httpu://10.0.60.101'
-    vpn=None
+    vpn = environ.get('VPN_HOST')
     
     server = GiraServer(cache=cache, 
                         password=environ.get('USERNAME'),
