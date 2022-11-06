@@ -1,9 +1,8 @@
-import gira, logging, sys, time
-from os import environ, path
+import logging, sys
+from os import environ
 from distutils.util import strtobool
 
 from gira.device import GiraServer
-import logging
 from dotenv import load_dotenv
 
 log = logging.getLogger(__name__)
@@ -21,10 +20,11 @@ if __name__ == '__main__':
     
     from gira.servercache import CacheObject
     cache = CacheObject(dburi=environ.get('SQLALCHEMY_DATABASE_URI'), instance=environ.get('HOSTNAME'))
-    # cache.invalidate()
+    cache.invalidate()
 
     vpn = 'https://http.httpaccess.net/GIS1YYYCJD/httpu://10.0.60.101'
-    # vpn=None
+    vpn=None
+    
     server = GiraServer(cache=cache, 
                         password=environ.get('USERNAME'),
                         username=environ.get('PASSWORD'),
@@ -33,6 +33,7 @@ if __name__ == '__main__':
                         hostname=environ.get('HOSTNAME'),
                         vpn=vpn
                         )
+    
     server.vpn_login(refresh=False)
     server.authenticate(refresh=False)
     server.get_device_config()
@@ -48,7 +49,7 @@ if __name__ == '__main__':
     # server.set_callaback(serviceCallback,valueCallback)
 
     # time.sleep(3)
-    server.delete_callback()
+    # server.delete_callback()
     log.debug(f'ended')
     
     # server.authenticate()

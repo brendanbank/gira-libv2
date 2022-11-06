@@ -8,7 +8,6 @@ import uuid
 import socket
 from urllib.parse import urljoin, urlparse
 import json
-from _weakref import ref
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -82,6 +81,10 @@ class GiraServer(object):
             self.cache.invalidate()
             
     def get_device_config(self, refresh=False):
+        
+        
+        self.authenticate()
+        
         device_config_json = self.cache.device_config_json
         if (device_config_json and not refresh):
             log.info(f'device_config found in cache')
@@ -95,6 +98,8 @@ class GiraServer(object):
                 return False
             
             self.cache.device_config_json = json.dumps(json_data)
+            
+            log.info(f'device_config fetched from server')
             
         self.functions = DeviceConfig(cache=self.cache,device=self)
         
@@ -135,7 +140,7 @@ class GiraServer(object):
         """authenticate the app at the gira server"""
         
         if (self.cache.vpn and not self.cache.cookie):
-            self.vpn_login()
+            self.vpn_login(refresh=True)
         
         if (self.cache.vpn and self.cache.cookie):
             hostname = self.cache.vpn_hostname
@@ -267,6 +272,7 @@ class GiraServer(object):
         else:
             cookie = None
         
+        log.info(f'get {url}')
         r = http_session.get(url, headers=Headers, verify=False, cookies=cookie)
         
         if (r.headers['Content-Type'] == 'application/json'):
@@ -285,8 +291,12 @@ class GiraServer(object):
         return(None, r.status_code)
 
     def vpn_login(self,refresh = False):
-        # here goes the useful code
-        if not refresh:
+        
+        if not self.cache.vpn:
+            log.info(f'vpn_login but vpn is not configured!')
+            return(True)
+
+        if not refresh and self.cache.vpn and self.cache.cookie:
             return(True)
         
         from lxml import etree

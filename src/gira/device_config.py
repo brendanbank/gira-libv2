@@ -1,9 +1,3 @@
-'''
-Created on 5 Nov 2022
-
-@author: brendan
-'''
-
 import json
 import logging
 
