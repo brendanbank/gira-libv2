@@ -14,7 +14,7 @@ load_dotenv()
 conf =  { 'DEBUG': bool(strtobool(environ.get('DEBUG', 'False'))),
          }
 logging.basicConfig(format='%(asctime)s %(name)s.%(funcName)s(%(lineno)s): %(message)s', stream=sys.stderr)
-logging.getLogger().setLevel(logging.DEBUG)
+logging.getLogger().setLevel(logging.INFO)
 
 if __name__ == '__main__':
     log.debug(f'started')
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     # cache.invalidate()
 
     vpn = 'https://http.httpaccess.net/GIS1YYYCJD/httpu://10.0.60.101'
-    vpn=None
+    # vpn=None
     server = GiraServer(cache=cache, 
                         password=environ.get('USERNAME'),
                         username=environ.get('PASSWORD'),
@@ -33,7 +33,8 @@ if __name__ == '__main__':
                         hostname=environ.get('HOSTNAME'),
                         vpn=vpn
                         )
-    server.authenticate()
+    server.vpn_login(refresh=False)
+    server.authenticate(refresh=False)
     server.get_device_config()
     
     

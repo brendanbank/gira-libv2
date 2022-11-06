@@ -7,7 +7,6 @@ import logging, sys
 import json
 
 logging.basicConfig(format='%(asctime)s %(name)s.%(funcName)s(%(lineno)s): %(message)s', stream=sys.stderr)
-logging.getLogger().setLevel(logging.DEBUG)
 log = logging.getLogger(__name__)
 
 

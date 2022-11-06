@@ -8,6 +8,7 @@ import uuid
 import socket
 from urllib.parse import urljoin, urlparse
 import json
+from _weakref import ref
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -83,7 +84,7 @@ class GiraServer(object):
     def get_device_config(self, refresh=False):
         device_config_json = self.cache.device_config_json
         if (device_config_json and not refresh):
-            log.debug(f'device_config found in cache')
+            log.info(f'device_config found in cache')
         
         else:
             url = self.DEVICEURLS['CONFIG_URL'].format(host=self.cache.vpn_hostname or self.cache.hostname, token=self.cache.token )
@@ -133,7 +134,7 @@ class GiraServer(object):
         
         """authenticate the app at the gira server"""
         
-        if (self.cache.vpn and (refresh == True or not self.cache.cookie)):
+        if (self.cache.vpn and not self.cache.cookie):
             self.vpn_login()
         
         if (self.cache.vpn and self.cache.cookie):
@@ -162,6 +163,8 @@ class GiraServer(object):
         http_session = requests.Session()      
         
         log.debug (cookie)      
+        
+        log.info(f'connect to {url}')
 
         r = http_session.post(url,
                     json=data,
@@ -173,7 +176,7 @@ class GiraServer(object):
         if (r.status_code == 201 ):
 
             self.cache.token = r.json()['token']
-            log.debug(f'received: {self.cache.token}')
+            log.info(f'token received')
                 
             return(self.cache.token)
 
@@ -281,8 +284,11 @@ class GiraServer(object):
 
         return(None, r.status_code)
 
-    def vpn_login(self):
+    def vpn_login(self,refresh = False):
         # here goes the useful code
+        if not refresh:
+            return(True)
+        
         from lxml import etree
         from io import StringIO
         # 
@@ -419,26 +425,4 @@ class GiraServer(object):
 
         log.critical(f'Error delete client from  server {url}: {r.text}')
         return(False)
-
-
-# if __name__ == '__main__':
-#
-#     from gira.servercache import CacheObject
-#     cache = CacheObject(gira_settings.get_property('SQLALCHEMY_DATABASE_URI'), 'srv1.bgwlan.nl')
-#     # cache.invalidate()
-#
-#     gira_link = 'https://http.httpaccess.net/GIS1YYYCJD/httpu://10.0.60.101'
-#     gira_link = None
-#     server = GiraServer(cache=cache,vpn=gira_link)
-#     # print (server.vpn_connect())
-#     # server.vpn_login()
-#     # server.version()
-#     server.authenticate(refresh=True)
-#     server.version(refresh=True)
-#
-#     # server.cache.cookie = server.vpn_connect()
-#
-
-        
-
         
