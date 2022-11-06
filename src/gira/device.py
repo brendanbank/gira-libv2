@@ -50,7 +50,7 @@ class GiraServer(object):
         self.cache=cache
         
         
-        cache.set_ignore(['username','password', 'gira_username', 'gira_password'])
+        cache.set_ignore(['username','password', 'gira_username', 'gira_password', 'vpn'])
         
 
         self.cache.hostname = hostname 
@@ -293,7 +293,7 @@ class GiraServer(object):
     def vpn_login(self,refresh = False):
         
         if not self.cache.vpn:
-            log.info(f'vpn_login but vpn is not configured!')
+            log.info(f'vpn not configured!')
             return(True)
 
         if not refresh and self.cache.vpn and self.cache.cookie:
