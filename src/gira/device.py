@@ -75,7 +75,7 @@ class GiraServer(object):
             return (False)
         
         self.identity()
-
+        
     def invalidate_cache(self):
         if (self.cache):
             self.cache.invalidate()
@@ -244,10 +244,10 @@ class GiraServer(object):
             return(False)
 
     def get_uid(self,uid):
+        log.debug(f'try to fetch {uid}')
         url = self.DEVICEURLS['GET_UID'].format(host=self.cache.vpn_hostname or self.cache.hostname, uid=uid, token=self.cache.token)
         (data,status_code) = self._get(url)
 
-        log.debug(f'try to fetch {uid}')
 
         if (status_code == 200):
             return(data)
@@ -344,6 +344,82 @@ class GiraServer(object):
         log.debug(f'new cookie {self.cache.cookie}')
                 
         return cookie
+
+    def post(self, url, data):
+        if (self.cache.vpn and not self.cache.cookie):
+            self.vpn_login()
+        
+        if (self.cache.vpn and self.cache.cookie):
+            cookie = self.vpn_connect()            
+        else:
+            cookie = None
+            
+        http_session = requests.Session()      
+        
+        log.debug(f'posting {data}')
+
+        r = http_session.post(url, json=data, headers=Headers, verify=False, cookies=cookie)
+        
+        if (hasattr(r.headers, 'content-type')):
+            if (r.headers['Content-Type'] == 'application/json'):
+                log.debug('Received status_code: %s with data %s' % (r.status_code, r.json()))
+                return(r.json(), r.status_code)
+        
+        if (r.status_code < 300):
+            log.debug('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
+        else:
+            log.error('Error status_code: %s and data: %s' % (r.status_code, r.text))
+            self.errors.append(f'Error trying to set callback with {data} status_code: {r.status_code} and data: {r.text}')
+
+        return(None, r.status_code)
+
+    def set_callaback(self, serviceCallback, valueCallback, testCallbacks=True):
+
+        url = self.DEVICEURLS['CALLBACK_URL'].format(host=self.cache.vpn_hostname or self.cache.hostname, token=self.cache.token)
+
+        jdata = {
+                'serviceCallback': serviceCallback,
+                'valueCallback': valueCallback,
+                "testCallbacks": testCallbacks
+                }
+        
+        print (jdata)
+
+        (data, status_code) = self.post(url, jdata)
+
+        if (status_code == 200):
+            log.info('Callback was successfully registered.')
+            return(True)
+
+        log.critical('Error logging when communicating to the server %s' % (url))
+
+        return(False)
+
+    def delete_callback(self):
+        if (self.cache.vpn and not self.cache.cookie):
+            self.vpn_login()
+        
+        if (self.cache.vpn and self.cache.cookie):
+            cookie = self.vpn_connect()            
+        else:
+            cookie = None
+
+        url = self.DEVICEURLS['CALLBACK_URL'].format(host=self.cache.vpn_hostname or self.cache.hostname, token=self.cache.token)
+        
+        http_session = requests.Session()
+
+        r = http_session.delete(url,
+                    headers=Headers,
+                    verify=False ,
+                    cookies=cookie)
+        
+        if (r.status_code == 200):
+            log.info('Callback was successfully deleted.')
+            return(True)
+
+        log.critical(f'Error delete client from  server {url}: {r.text}')
+        return(False)
+
 
 # if __name__ == '__main__':
 #
