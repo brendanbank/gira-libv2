@@ -13,17 +13,18 @@ load_dotenv()
 conf =  { 'DEBUG': bool(strtobool(environ.get('DEBUG', 'False'))),
          }
 logging.basicConfig(format='%(asctime)s %(name)s.%(funcName)s(%(lineno)s): %(message)s', stream=sys.stderr)
-logging.getLogger().setLevel(logging.INFO)
+logging.getLogger().setLevel(logging.DEBUG)
 
-if __name__ == '__main__':
+    
+def main_exec():
     log.debug(f'started')
     
-    from gira.servercache import CacheObject
+    from gira.cache import CacheObject
     cache = CacheObject(dburi=environ.get('SQLALCHEMY_DATABASE_URI'), instance=environ.get('INSTANCE_NAME'))
     # cache.invalidate()
 
     vpn = environ.get('VPN_HOST')
-    
+    # vpn = None
     server = GiraServer(cache=cache, 
                         password=environ.get('USERNAME'),
                         username=environ.get('PASSWORD'),
@@ -32,10 +33,12 @@ if __name__ == '__main__':
                         hostname=environ.get('HOSTNAME'),
                         vpn=vpn
                         )
-    
-    server.vpn_login(refresh=False)
-    server.authenticate(refresh=False)
-    server.get_device_config()
+    refresh=True
+    server.vpn_login(refresh=refresh)
+    server.authenticate(refresh=refresh)
+    logging.getLogger().setLevel(logging.INFO)
+
+    server.get_device_config(refresh=refresh)
     
     
     # log.debug(server.functions.get_all())
@@ -59,3 +62,5 @@ if __name__ == '__main__':
     #
     # server.invalidate_cache()
         
+if __name__ == '__main__':
+    main_exec()

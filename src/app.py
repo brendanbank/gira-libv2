@@ -2,7 +2,7 @@ import logging, sys
 from flask import Flask, request
 from gira.device import GiraServer
 
-from gira.servercache import CacheObject
+from gira.cache import CacheObject
 
 
 log = logging.getLogger(__name__)
