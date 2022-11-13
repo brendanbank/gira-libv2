@@ -105,20 +105,3 @@ class CacheObject(CacheBase):
 
         # Calling the super class to avoid recursion
         return super(CacheObject, self).__setattr__(name, None)
-
-def main_exec():
-    import sys
-    
-    logging.basicConfig(format='%(asctime)s %(name)s.%(funcName)s(%(lineno)s): %(message)s', stream=sys.stderr)
-    logging.getLogger().setLevel(logging.DEBUG)
-    log.debug('started')
-    
-    cache = CacheObject(dburi='sqlite:////tmp/cache.db', instance="cache_test", echo=False)
-    print (cache.test)
-    cache.test = 'Testing 1234'
-    print (cache.test)
-    print (vars(cache))
-
-
-if __name__ == '__main__':
-    main_exec()
