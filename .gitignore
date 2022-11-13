@@ -151,3 +151,4 @@ gauge_all*db
 mysql
 .settings
 Pipfile.lock
+/.DS_Store
