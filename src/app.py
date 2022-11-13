@@ -18,7 +18,7 @@ GIRA_PASSWORD=<>
 VPN_HOST=<url to your X1 link through the Gira S1>
 INSTANCE_NAME=<instance name, used for storing your key variables (cookies, authorization keys) in your persistent cache> 
 
-The IPN_HOST has the following sturcture
+The VPN_HOST has the following sturcture
 
     https://http.httpaccess.net/[serviceId]/httpu://[local LAN ip address of your X1]
     
