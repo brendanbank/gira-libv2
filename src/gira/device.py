@@ -1,3 +1,7 @@
+"""
+gira.device is a module to interact with the GIRA X1 Rest API.
+"""
+
 
 import logging
 import requests
@@ -31,8 +35,9 @@ DeviceTypes = {
     }    
 
 class GiraServer(object):
-
-    def __init__(self, hostname, 
+    
+    def __init__(self,
+                 hostname, 
                  username,
                  password, 
                  cache,
@@ -41,6 +46,18 @@ class GiraServer(object):
                  gira_username=None,
                  gira_password=None,
                  ):
+        '''
+        
+        :param hostname: The local LAN hostname/ip address of the X1   
+        :param username: Username of the X1
+        :param password: Password of the X1
+        :param cache: cache object see CacheObject class in the cache class file
+        :param cookie: the Cookie if you have it of the VPN server.
+        :param vpn: VPN Server URL The VPN_HOST has the following structure https://http.httpaccess.net/[serviceId]/httpu://[local LAN ip address of your X1] It can be found in your S1 configuration on https://geraeteportal.gira.de/
+        :param gira_username: username of the https://geraeteportal.gira.de/ portal
+        :param gira_password: password of the https://geraeteportal.gira.de/ portal
+        '''
+        
                
         log.debug(f'{__name__} started')
 

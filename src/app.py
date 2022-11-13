@@ -13,8 +13,8 @@ HOSTNAME=<local LAN IP address of your X1>
 USERNAME=<username of the X1>
 PASSWORD=<password of the X1>
 SQLALCHEMY_DATABASE_URI=<database URI>
-GIRA_USERNAME=<>
-GIRA_PASSWORD=<>
+GIRA_USERNAME=<username of the https://geraeteportal.gira.de/ portal>
+GIRA_PASSWORD=<pasword of the https://geraeteportal.gira.de/ portal>
 VPN_HOST=<url to your X1 link through the Gira S1>
 INSTANCE_NAME=<instance name, used for storing your key variables (cookies, authorization keys) in your persistent cache> 
 
