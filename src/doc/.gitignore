@@ -1,1 +1,6 @@
-_build/
+/Makefile
+/conf.py
+/gira.rst
+/index.rst
+/make.bat
+/modules.rst
