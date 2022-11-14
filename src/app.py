@@ -94,7 +94,8 @@ if __name__ == '__main__':
                         gira_username=environ.get('GIRA_USERNAME'),
                         gira_password=environ.get('GIRA_PASSWORD'),
                         hostname=environ.get('HOSTNAME'),
-                        vpn=vpn
+                        vpn=vpn,
+                        refresh=True
                         )
     server.authenticate()
     server.get_device_config()

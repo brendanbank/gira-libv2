@@ -12,6 +12,7 @@ mysqlclient = "*"
 flask = "*"
 lxml = "*"
 pyopenssl = "*"
+sphinx = "*"
 
 [dev-packages]
 

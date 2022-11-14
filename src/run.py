@@ -21,24 +21,23 @@ def main_exec():
     
     from gira.cache import CacheObject
     cache = CacheObject(dburi=environ.get('SQLALCHEMY_DATABASE_URI'), instance=environ.get('INSTANCE_NAME'))
-    # cache.invalidate()
 
     vpn = environ.get('VPN_HOST')
-    # vpn = None
+
     server = GiraServer(cache=cache, 
                         password=environ.get('USERNAME'),
                         username=environ.get('PASSWORD'),
                         gira_username=environ.get('GIRA_USERNAME'),
                         gira_password=environ.get('GIRA_PASSWORD'),
                         hostname=environ.get('HOSTNAME'),
-                        vpn=vpn
+                        vpn=vpn,
                         )
-    refresh=True
-    server.vpn_login(refresh=refresh)
-    server.authenticate(refresh=refresh)
+    
+    server.vpn_login()
+    server.authenticate()
     logging.getLogger().setLevel(logging.INFO)
 
-    server.get_device_config(refresh=refresh)
+    server.get_device_config()
     
     
     # log.debug(server.functions.get_all())

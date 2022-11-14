@@ -1,6 +1,3 @@
-"""
-gira.device is a module to interact with the GIRA X1 Rest API.
-"""
 
 
 import logging
@@ -31,42 +28,50 @@ DeviceTypes = {
         "CONFIG_URL_UID": 'https://{host}/api/uiconfig/uid?token={token}',
         "GET_UID": 'https://{host}/api/v2/values/{uid}?token={token}',
         "PUT_UID": 'https://{host}/api/v2/values?token={token}',
+        
         }
     }    
 
 class GiraServer(object):
+    '''
+    class method to create a object to interact with the REST API.
     
+    :param hostname: Hostname of the X1 or Home server on the local LAN
+    :param username: Gira Server (X1 or Home server) username
+    :param password: Gira Server (X1 or Home server) password
+    :param cache: gira.cache.CacheObject object
+    :param cookie: Cookie DICT
+    :param vpn: url to your X1 link through the Gira S1  has the following structure
+        https://http.httpaccess.net/[serviceId]/httpu://[local LAN ip address of your X1]
+        Ensure "httpu" is used to allow the untrusted certificate on the X1/Homeserver
+    :param gira_username: username of the https://geraeteportal.gira.de/ portal
+    :param gira_password: pasword of the https://geraeteportal.gira.de/ portal
+    :param refresh: boolean if True it will delete the cached settings.
+
+    '''
+
     def __init__(self,
-                 hostname, 
+                 hostname,
                  username,
-                 password, 
+                 password,
                  cache,
-                 cookie=None, 
-                 vpn=False, 
+                 cookie=None,
+                 vpn=False,
                  gira_username=None,
                  gira_password=None,
-                 ):
-        '''
-        
-        :param hostname: The local LAN hostname/ip address of the X1   
-        :param username: Username of the X1
-        :param password: Password of the X1
-        :param cache: cache object see CacheObject class in the cache class file
-        :param cookie: the Cookie if you have it of the VPN server.
-        :param vpn: VPN Server URL The VPN_HOST has the following structure https://http.httpaccess.net/[serviceId]/httpu://[local LAN ip address of your X1] It can be found in your S1 configuration on https://geraeteportal.gira.de/
-        :param gira_username: username of the https://geraeteportal.gira.de/ portal
-        :param gira_password: password of the https://geraeteportal.gira.de/ portal
-        '''
-        
+                 refresh=False):
                
         log.debug(f'{__name__} started')
+        
+        log.debug(vars(self))
 
         if (cache == None):
             raise ValueError(f'cache cannot not be None')
-            
-        self.cache=cache
         
-        
+        if refresh:
+            cache.invalidate()
+
+        self.cache = cache
         cache.set_ignore(['username','password', 'gira_username', 'gira_password', 'vpn'])
         
 
@@ -78,10 +83,12 @@ class GiraServer(object):
         
         if (vpn):
             self.cache.vpn = vpn
+            self.vpn_login()
+    
 
         if cookie:
             self.cache.cookie = cookie
-        
+                    
         self.DEVICETYPE = self.DEVICEURLS = None
         
         self.cache.name = f'de.python.{uuid.getnode()}.{socket.gethostname()}' 
@@ -94,10 +101,18 @@ class GiraServer(object):
         self.identity()
         
     def invalidate_cache(self):
+        '''
+        This will delete the cache items of database.
+        '''
         if (self.cache):
             self.cache.invalidate()
             
     def get_device_config(self, refresh=False):
+        '''
+        GiraServer.get_device_config retrieves the configuration from the server or from the cache.
+        
+        :param refresh: boolean if True it will ignore the cache in the database and fetch the configuration from the server and store it in the cache.
+        '''
         
         
         self.authenticate()
@@ -123,6 +138,11 @@ class GiraServer(object):
         return(self.functions)
             
     def version(self, refresh=False):
+        '''
+        GiraServer.version retrieves the configuration version from the server or from the cache.
+
+        :param refresh: boolean if True it will ignore the cache in the database and fetch the version from the server and store it in the cache.
+        '''
         
         version = self.cache.config_version
         
@@ -153,9 +173,13 @@ class GiraServer(object):
 
 
     def authenticate(self,refresh=False):
-        
-        """authenticate the app at the gira server"""
-        
+        '''
+        authenticate the app at the gira server
+
+        :param refresh: boolean if True it will ignore the cache in the database and fetch the setting from the server and store it in the cache.
+        :returns: Authentication Token or false if the it's not possible authenticate. 
+        '''
+            
         if (self.cache.vpn and not self.cache.cookie):
             self.vpn_login(refresh=True)
         
@@ -208,6 +232,11 @@ class GiraServer(object):
     
     
     def identity(self, refresh=False):
+        '''
+        Get the type of server (identity) from the X1/Home server.
+        
+        :param refresh: boolean if True it will ignore the cache in the database and fetch the setting from the server and store it in the cache.
+        '''
         
         if (not refresh and self.cache.devicetype):
             self.DEVICEURLS = DeviceTypes[self.cache.devicetype]
@@ -308,6 +337,11 @@ class GiraServer(object):
         return(None, r.status_code)
 
     def vpn_login(self,refresh = False):
+        '''
+        VPN login (see separate documentation)
+        
+        :param refresh: boolean if True it will ignore the cache in the database and fetch the setting from the server and store it in the cache.
+        '''
         
         if not self.cache.vpn:
             log.info(f'vpn not configured!')
@@ -378,7 +412,7 @@ class GiraServer(object):
                 
         return cookie
 
-    def post(self, url, data):
+    def _post(self, url, data):
         if (self.cache.vpn and not self.cache.cookie):
             self.vpn_login()
         
@@ -407,6 +441,15 @@ class GiraServer(object):
         return(None, r.status_code)
 
     def set_callaback(self, serviceCallback, valueCallback, testCallbacks=True):
+        '''
+        Create a callback for events on the KNX bus on the Gira X1/Homeserver.
+        
+        :param serviceCallback: Callback url for service callback's.
+        :param valueCallback: Callback url for datapoint callback's.
+        :param testCallbacks: Test the callback server.
+        :returns: True of False
+        
+        '''
 
         url = self.DEVICEURLS['CALLBACK_URL'].format(host=self.cache.vpn_hostname or self.cache.hostname, token=self.cache.token)
 
@@ -416,9 +459,7 @@ class GiraServer(object):
                 "testCallbacks": testCallbacks
                 }
         
-        print (jdata)
-
-        (data, status_code) = self.post(url, jdata)
+        (data, status_code) = self._post(url, jdata)
 
         if (status_code == 200):
             log.info('Callback was successfully registered.')
@@ -429,6 +470,12 @@ class GiraServer(object):
         return(False)
 
     def delete_callback(self):
+        '''
+        Deletes the call back settings on the Gira X1/Homeserver.
+        
+        :returns: True of False
+
+        '''
         if (self.cache.vpn and not self.cache.cookie):
             self.vpn_login()
         

@@ -21,7 +21,6 @@ log.debug(f'{__name__} loaded')
 # Trigger
 # Up-Down
 
-
 class Datapoint(object):
     def __init__(self, dp):
         self.value = None
@@ -99,7 +98,7 @@ class Location(object):
     def location_string(self):
         string = ""
         if (self.parent):
-            string = f'{self.parent.location_string()}/{self.displayName} ({self.locationType})'
+            string = f'{self.parent.location_string()}/{self.displayName}({self.locationType})'
         else:
             string = f'{self.displayName} ({self.locationType})'
             
@@ -107,7 +106,6 @@ class Location(object):
                 
     def __repr__(self):
         return f"<Location(displayName='{self.displayName}', locationType='{self.locationType}')>"
-
 
 class Trades(object):
     def __init__(self, config):
@@ -123,11 +121,15 @@ class Trades(object):
         
         
 class DeviceConfig(object):
+    '''
+    This class is creating a device configuration based on the the cached device configuration.
+    
+    :param cache: gira.cache.CacheObject object
+    :param device: gira.GiraServer object
+    '''
 
     def __init__(self, cache, device):
-        '''
-        Constructor
-        '''
+
         log.debug(f'started')
         self.cache = cache
         self.locations=[]
@@ -141,13 +143,13 @@ class DeviceConfig(object):
         self.trades = []
         
         if 'functions' in self.device_config.keys():
-            self.proc_functions()
+            self._proc_functions()
         
         if 'locations' in self.device_config.keys():
-            self.proc_location()
+            self._proc_location()
             
         if 'trades' in self.device_config.keys():
-            self.proc_trades()
+            self._proc_trades()
         
         self.uids = {}
         self.uids.update(self.function_uids)
@@ -155,18 +157,24 @@ class DeviceConfig(object):
         
 
     def uid(self,uid):
+        """returns the gira.device_config.Datapoint or gira.device_config.Function based on the uid.
+        """
         return self.uids[uid]
 
 
     def get_all (self):
+        """Fetch all gira.device_config.Datapoint from the X1 server
+        """
         for function_uid in self.function_uids:
             self.function_uids[function_uid].get()
 
-    def update_uid (self,uid,data):
-        if uid in self.uids:
-            self.uids[uid].update(data)
+    # def update_uid (self,uid,data):
+    #     """update gira.device_config.Datapoint with a value.
+    #     """
+    #     if uid in self.uids:
+    #         self.uids[uid].update(data)
         
-    def proc_location(self):
+    def _proc_location(self):
         log.debug(f'started')
         for  location in self.device_config['locations']:
             location = Location(location)
@@ -192,7 +200,7 @@ class DeviceConfig(object):
             for loc in location.children:
                 set_location(self,loc)
 
-    def proc_trades(self):
+    def _proc_trades(self):
         log.debug(f'started')
         
         
@@ -209,7 +217,7 @@ class DeviceConfig(object):
             self.trades.append(trade)
 
         
-    def proc_functions(self):
+    def _proc_functions(self):
         log.debug(f'started')
         
         for  function in self.device_config['functions']:
