@@ -1,6 +1,3 @@
-/Makefile
-/conf.py
-/gira.rst
-/index.rst
-/make.bat
-/modules.rst
+_static/
+_build
+_templates
