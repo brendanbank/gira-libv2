@@ -9,6 +9,8 @@ import uuid
 import socket
 from urllib.parse import urljoin, urlparse
 import json
+from lxml import etree
+from io import StringIO
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -34,7 +36,7 @@ DeviceTypes = {
 
 class GiraServer(object):
     '''
-    class method to create a object to interact with the REST API.
+    class to interact with the REST API.
     
     :param hostname: Hostname of the X1 or Home server on the local LAN
     :param username: Gira Server (X1 or Home server) username
@@ -72,6 +74,9 @@ class GiraServer(object):
             cache.invalidate()
 
         self.cache = cache
+        
+        """Set the ingore vairables that will not be stored in the cache object"""
+        
         cache.set_ignore(['username','password', 'gira_username', 'gira_password', 'vpn'])
         
 
@@ -80,6 +85,7 @@ class GiraServer(object):
         self.cache.password = password 
         self.cache.gira_username = gira_username 
         self.cache.gira_password = gira_password
+        self.functions = None
         
         if (vpn):
             self.cache.vpn = vpn
@@ -260,28 +266,6 @@ class GiraServer(object):
             log.critical(f'Could not find devictype for: {self.DEVICETYPE["deviceType"]} ({self.DEVICETYPE["deviceName"]})')
             return(False)
 
-    def _put(self, url, data):
-        if (self.cache.vpn and not self.cache.cookie):
-            self.vpn_login()
-        
-        if (self.cache.vpn and self.cache.cookie):
-            cookie = self.vpn_connect()            
-        else:
-            cookie = None
-            
-
-        http_session = requests.Session()      
-
-        r = http_session.put(url, json=data, headers=Headers, verify=False, cookies=cookie)
-
-        if (r.status_code < 300):
-            log.debug('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
-        else:
-            log.error('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
-            self.errors.append('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
-
-        return(None, r.status_code)
-
     def put_uid(self,uid,value):
         url = self.DEVICEURLS['PUT_UID'].format(host=self.cache.vpn_hostname or self.cache.hostname, token=self.cache.token)
         data = {"values": [
@@ -308,33 +292,6 @@ class GiraServer(object):
         else:
             return (None)
 
-    def _get(self, url):
-        log.debug(f'connect to {url}')
-        
-        http_session = requests.Session()
-        
-        if (self.cache.cookie):
-            cookie = json.loads(self.cache.cookie)
-        else:
-            cookie = None
-        
-        log.info(f'get {url}')
-        r = http_session.get(url, headers=Headers, verify=False, cookies=cookie)
-        
-        if (r.headers['Content-Type'] == 'application/json'):
-            if len(r.text) < 500:
-                log.debug(f'Received status_code: {r.status_code} with data {r.json()}')
-            else:
-                log.debug(f'Received status_code: {r.status_code}')
-            return(r.json(), r.status_code)
-        
-        log.debug(f'Received status_code: {r.status_code} with non json data and data: {r.text}')
-        
-        if not (r.status_code < 300):
-            log.error('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
-            self.errors.append('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
-
-        return(None, r.status_code)
 
     def vpn_login(self,refresh = False):
         '''
@@ -350,8 +307,6 @@ class GiraServer(object):
         if not refresh and self.cache.vpn and self.cache.cookie:
             return(True)
         
-        from lxml import etree
-        from io import StringIO
         # 
         log.info(f'try to connect to {self.cache.vpn}')
         
@@ -412,34 +367,6 @@ class GiraServer(object):
                 
         return cookie
 
-    def _post(self, url, data):
-        if (self.cache.vpn and not self.cache.cookie):
-            self.vpn_login()
-        
-        if (self.cache.vpn and self.cache.cookie):
-            cookie = self.vpn_connect()            
-        else:
-            cookie = None
-            
-        http_session = requests.Session()      
-        
-        log.debug(f'posting {data}')
-
-        r = http_session.post(url, json=data, headers=Headers, verify=False, cookies=cookie)
-        
-        if (hasattr(r.headers, 'content-type')):
-            if (r.headers['Content-Type'] == 'application/json'):
-                log.debug('Received status_code: %s with data %s' % (r.status_code, r.json()))
-                return(r.json(), r.status_code)
-        
-        if (r.status_code < 300):
-            log.debug('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
-        else:
-            log.error('Error status_code: %s and data: %s' % (r.status_code, r.text))
-            self.errors.append(f'Error trying to set callback with {data} status_code: {r.status_code} and data: {r.text}')
-
-        return(None, r.status_code)
-
     def set_callaback(self, serviceCallback, valueCallback, testCallbacks=True):
         '''
         Create a callback for events on the KNX bus on the Gira X1/Homeserver.
@@ -499,4 +426,83 @@ class GiraServer(object):
 
         log.critical(f'Error delete client from  server {url}: {r.text}')
         return(False)
+
+    def _put(self, url, data):
+        if (self.cache.vpn and not self.cache.cookie):
+            self.vpn_login()
         
+        if (self.cache.vpn and self.cache.cookie):
+            cookie = self.vpn_connect()            
+        else:
+            cookie = None
+            
+
+        http_session = requests.Session()      
+
+        r = http_session.put(url, json=data, headers=Headers, verify=False, cookies=cookie)
+
+        if (r.status_code < 300):
+            log.debug('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
+        else:
+            log.error('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
+            self.errors.append('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
+
+        return(None, r.status_code)
+
+
+    def _get(self, url):
+        log.debug(f'connect to {url}')
+        
+        http_session = requests.Session()
+        
+        if (self.cache.cookie):
+            cookie = json.loads(self.cache.cookie)
+        else:
+            cookie = None
+        
+        log.info(f'get {url}')
+        r = http_session.get(url, headers=Headers, verify=False, cookies=cookie)
+        
+        if (r.headers['Content-Type'] == 'application/json'):
+            if len(r.text) < 500:
+                log.debug(f'Received status_code: {r.status_code} with data {r.json()}')
+            else:
+                log.debug(f'Received status_code: {r.status_code}')
+            return(r.json(), r.status_code)
+        
+        log.debug(f'Received status_code: {r.status_code} with non json data and data: {r.text}')
+        
+        if not (r.status_code < 300):
+            log.error('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
+            self.errors.append('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
+
+        return(None, r.status_code)
+
+    def _post(self, url, data):
+        if (self.cache.vpn and not self.cache.cookie):
+            self.vpn_login()
+        
+        if (self.cache.vpn and self.cache.cookie):
+            cookie = self.vpn_connect()            
+        else:
+            cookie = None
+            
+        http_session = requests.Session()      
+        
+        log.debug(f'posting {data}')
+
+        r = http_session.post(url, json=data, headers=Headers, verify=False, cookies=cookie)
+        
+        if (hasattr(r.headers, 'content-type')):
+            if (r.headers['Content-Type'] == 'application/json'):
+                log.debug('Received status_code: %s with data %s' % (r.status_code, r.json()))
+                return(r.json(), r.status_code)
+        
+        if (r.status_code < 300):
+            log.debug('Received status_code: %s with non json data and data: %s' % (r.status_code, r.text))
+        else:
+            log.error('Error status_code: %s and data: %s' % (r.status_code, r.text))
+            self.errors.append(f'Error trying to set callback with {data} status_code: {r.status_code} and data: {r.text}')
+
+        return(None, r.status_code)
+

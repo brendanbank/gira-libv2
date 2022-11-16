@@ -168,11 +168,11 @@ class DeviceConfig(object):
         for function_uid in self.function_uids:
             self.function_uids[function_uid].get()
 
-    # def update_uid (self,uid,data):
-    #     """update gira.device_config.Datapoint with a value.
-    #     """
-    #     if uid in self.uids:
-    #         self.uids[uid].update(data)
+    def update_uid (self,uid,data):
+        """update gira.device_config.Datapoint with a value.
+        """
+        if uid in self.uids:
+            self.uids[uid].update(data)
         
     def _proc_location(self):
         log.debug(f'started')
