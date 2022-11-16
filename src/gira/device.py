@@ -642,19 +642,19 @@ class DeviceConfig(object):
         
 
     def uid(self,uid):
-        """returns the gira.device_config.Datapoint or gira.device_config.Function based on the uid.
+        """returns the gira.device.Datapoint or gira.device.Function based on the uid.
         """
         return self.uids[uid]
 
 
     def get_all (self):
-        """Fetch all gira.device_config.Datapoint from the X1 server
+        """Fetch all gira.device.Datapoint from the X1 server
         """
         for function_uid in self.function_uids:
             self.function_uids[function_uid].get()
 
     def update_uid (self,uid,data):
-        """update gira.device_config.Datapoint with a value.
+        """update gira.device.Datapoint with a value.
         """
         if uid in self.uids:
             self.uids[uid].update(data)
