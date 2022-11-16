@@ -104,6 +104,19 @@ class CacheObject(CacheBase):
             
         super(CacheObject, self).__dict__[name] = value
 
+    # Gets called when the item is not found via __getattribute__
+    def __getattr__(self, name):
+                    
+        if not name in super(CacheObject, self)._ignore_:
+            value = super(CacheObject, self)._get_variable(name)
+            if value:
+                super(CacheObject, self).__dict__[name] = value
+                return(value)
+
+        # Calling the super class to avoid recursion
+        return super(CacheObject, self).__setattr__(name, None)
+    
+    
     # # Gets called when an attribute is accessed
     # def __getattribute__(self, name):
     #
@@ -120,14 +133,4 @@ class CacheObject(CacheBase):
     #     # Calling the super class to avoid recursion
     #     return super(CacheObject, self).__getattribute__(name)
     
-    # Gets called when the item is not found via __getattribute__
-    def __getattr__(self, name):
-                    
-        if not name in super(CacheObject, self)._ignore_:
-            value = super(CacheObject, self)._get_variable(name)
-            if value:
-                super(CacheObject, self).__dict__[name] = value
-                return(value)
 
-        # Calling the super class to avoid recursion
-        return super(CacheObject, self).__setattr__(name, None)
