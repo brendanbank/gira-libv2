@@ -1,3 +1,5 @@
+"""Module to store settings in a database.
+"""
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import sqlalchemy

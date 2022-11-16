@@ -1,4 +1,5 @@
-
+"""Module to interact with the X1 Rest API
+"""
 
 import logging
 import requests
