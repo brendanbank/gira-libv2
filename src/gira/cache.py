@@ -1,4 +1,41 @@
 """Module to store settings in a database.
+
+This module can be used stand alone to store persistent settings in a database.
+
+you can create objects dynamically by just declaring them.
+
+.. highlight:: python
+.. code-block:: python
+
+    >>> from gira import CacheObject
+    >>> myObject = CacheObject(dburi="sqlite:////tmp/gira.db")
+    >>> myObject.someSetting = 'MyValue'
+
+This will create a sqlite database in /tmp/gira.db. 
+
+.. highlight:: python
+.. code-block:: python
+
+    brendan@srv-gira doc % sqlite3 /tmp/gira.db
+    SQLite version 3.39.4 2022-09-07 20:51:41
+    Enter ".help" for usage hints.
+    sqlite> SELECT * from cached_attributes;
+    cache|someSetting|MyValue
+
+The next time you call create the object and call the set the variable it will
+retrieve the the data from the database.
+
+.. highlight:: python
+.. code-block:: python
+
+    >>> from gira import CacheObject
+    >>> myObject = CacheObject(dburi="sqlite:////tmp/gira.db")
+    >>> myObject.someSetting
+    'MyValue'
+    >>> 
+
+Be carefull to call gira.CacheObject instead of CacheBase which is the base class. 
+
 """
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -92,7 +129,6 @@ class CacheBase(object):
         
         :param ignore_list: array of strings with the variables names .
         '''
-        
         self.ignore = self.ignore + ignore_list
     
 class CacheObject(CacheBase):

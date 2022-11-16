@@ -13,6 +13,9 @@ flask = "*"
 lxml = "*"
 pyopenssl = "*"
 sphinx = "*"
+myst-parser = "*"
+recommonmark = "*"
+sphinx-markdown-tables = "*"
 
 [dev-packages]
 
