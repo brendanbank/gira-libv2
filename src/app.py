@@ -32,9 +32,9 @@ You will have to run GiraServer.set_callaback after the server has started.
 
 import logging, sys
 from flask import Flask, request
-from gira.device import GiraServer
 from distutils.util import strtobool
-from gira.cache import CacheObject
+
+from gira import GiraServer, CacheObject
 
 
 log = logging.getLogger(__name__)

@@ -86,7 +86,7 @@ class CacheBase(object):
     
     def set_ignore(self,ignore_list):
         '''
-        sets the variables  that should not be stored. Such as authentication credentials.
+        sets the variables names that should not be stored in the cache.
         
         :param ignore_list: array of strings with the variables names .
         '''
@@ -94,16 +94,6 @@ class CacheBase(object):
         self.ignore = self.ignore + ignore_list
     
 class CacheObject(CacheBase):
-    '''
-    Create a cache object to store settings persistently in a database. 
-    
-    :param dburi: database uri defaulting to "file::memory:?cache=shared"
-    :param instance: Instance name, used as a primary key for storing settings.
-    :param echo: echo sql statements by sqlalchemy. 
-    :param future: see sqlalchemy documentation. 
-    '''
-    
-
 
     def __setattr__(self, name, value):
 
