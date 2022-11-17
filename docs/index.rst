@@ -12,7 +12,7 @@ Welcome to Gira lib v2's documentation!
 
 
    gira
-
+   examples
 
 Indices and tables
 ==================

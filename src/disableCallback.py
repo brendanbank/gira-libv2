@@ -1,3 +1,9 @@
+'''
+Disables the Callback to the server
+
+    python ./disableCallback.py
+
+'''
 import logging, sys
 from os import environ
 from distutils.util import strtobool
@@ -15,8 +21,13 @@ conf =  { 'DEBUG': bool(strtobool(environ.get('DEBUG', 'False'))),
 logging.basicConfig(format='%(asctime)s %(name)s.%(funcName)s(%(lineno)s): %(message)s', stream=sys.stderr)
 logging.getLogger().setLevel(logging.DEBUG)
 
-    
-def main_exec():
+
+
+
+def main():
+    """
+    main_exec
+    """
     log.debug(f'started')
     
     from gira.cache import CacheObject
@@ -50,4 +61,4 @@ def main_exec():
     log.debug(f'ended')
             
 if __name__ == '__main__':
-    main_exec()
+    main()

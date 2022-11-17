@@ -1,7 +1,12 @@
+"""Enables the Callback to the server
+
+    python ./enableCallback.py
+"""
+
 import logging, sys
 from os import environ
 
-from gira.device import GiraServer
+from gira import GiraServer, CacheObject
 from dotenv import load_dotenv
 
 log = logging.getLogger(__name__)
@@ -16,7 +21,6 @@ logging.getLogger().setLevel(logging.DEBUG)
 def main_exec():
     log.debug(f'started')
     
-    from gira.cache import CacheObject
     cache = CacheObject(dburi=environ.get('SQLALCHEMY_DATABASE_URI'), instance=environ.get('INSTANCE_NAME'))
     # cache.invalidate()
 

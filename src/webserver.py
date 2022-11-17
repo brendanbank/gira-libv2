@@ -1,34 +1,13 @@
-"""
+'''
 This is a flask test server to demonstrate how to receive call-backs from an X1 Gira Server.
 
 To start this flask test server
 
-  python ./app.py
+  python ./webserver.py
   
-
-It expects the following environment variables to be set.
-
-DEBUG=<True|False>
-HOSTNAME=<local LAN IP address of your X1>
-USERNAME=<username of the X1>
-PASSWORD=<password of the X1>
-SQLALCHEMY_DATABASE_URI=<database URI>
-GIRA_USERNAME=<username of the https://geraeteportal.gira.de/ portal>
-GIRA_PASSWORD=<pasword of the https://geraeteportal.gira.de/ portal>
-VPN_HOST=<url to your X1 link through the Gira S1>
-INSTANCE_NAME=<instance name, used for storing your key variables (cookies, authorization keys) in your persistent cache> 
-
-The VPN_HOST has the following sturcture
-
-    https://http.httpaccess.net/[serviceId]/httpu://[local LAN ip address of your X1]
-    
-It can be found in your S1 configuration on https://geraeteportal.gira.de/
-
-You can add these variables to the .env file in the root of your project, the load_dotenv command will read them.
-
 You will have to run GiraServer.set_callaback after the server has started.
 
-"""
+'''
 
 import logging, sys
 from flask import Flask, request
