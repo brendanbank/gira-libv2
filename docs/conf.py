@@ -35,3 +35,7 @@ language = 'ls -al'
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+
+# toc_object_entries_show_parents = ['all']
+add_module_names = True
+# toc_object_entries = False

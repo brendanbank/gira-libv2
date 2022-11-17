@@ -10,12 +10,11 @@ Welcome to Gira lib v2's documentation!
    :maxdepth: 4
    :caption: Contents:
 
-
    gira
    examples
 
 Indices and tables
-==================
+====================================
 
 * :ref:`genindex`
 * :ref:`modindex`

@@ -1,19 +1,18 @@
 gira package
 ============
 
-Module contents
----------------
+gira Module
+------------------------------------
 
 .. automodule:: gira
    :members:
    :undoc-members:
    :show-inheritance:
 
-Submodules
-----------
 
 gira.device module
-------------------
+------------------------------------
+
 
 .. automodule:: gira.device
    :members:
@@ -22,7 +21,7 @@ gira.device module
    :exclude-members: Datapoint, Function, Location, Trades
 
 gira.cache module
------------------
+------------------------------------
 
 .. automodule:: gira.cache
    :members:
