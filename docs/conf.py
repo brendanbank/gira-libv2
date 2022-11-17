@@ -47,4 +47,5 @@ def setup(app):
 
 html_theme_options = {
     "sidebar_width": "300px",
+    "page_width": "1340px"
 }
