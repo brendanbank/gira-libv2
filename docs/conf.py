@@ -47,5 +47,4 @@ def setup(app):
 
 html_theme_options = {
     "sidebar_width": "300px",
-    "fixed_sidebar:": True
 }
