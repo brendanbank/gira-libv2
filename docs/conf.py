@@ -34,8 +34,18 @@ language = 'ls -al'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
+
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# toc_object_entries_show_parents = ['all']
-add_module_names = True
-# toc_object_entries = False
+# add custom css
+def setup(app):
+   app.add_css_file('gira.css')  # give a filename you created.
+
+html_theme_options = {
+    "sidebar_width": "300px",
+    "fixed_sidebar:": True
+}
