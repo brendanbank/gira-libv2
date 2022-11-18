@@ -1,18 +1,8 @@
 gira package
 ============
 
-gira Module
-------------------------------------
-
-.. automodule:: gira
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-
 gira.device module
 ------------------------------------
-
 
 .. automodule:: gira.device
    :members:

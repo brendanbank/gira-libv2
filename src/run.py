@@ -2,22 +2,25 @@ import logging, sys, time
 from os import environ
 log = logging.getLogger(__name__)
 
-from  gira import CacheObject, GiraServer
+import gira
 from dotenv import load_dotenv
 load_dotenv()
 
-logging.basicConfig(format='%(asctime)s %(name)s.%(funcName)s(%(lineno)s): %(message)s', stream=sys.stderr)
+logging.basicConfig( 
+        format='%(asctime)s %(name)s.%(funcName)s(%(lineno)s): %(message)s',
+        stream=sys.stderr)
 logging.getLogger().setLevel(logging.DEBUG)
 
     
 def main_exec():
     log.debug(f'started')
     
-    cache = CacheObject(dburi=environ.get('SQLALCHEMY_DATABASE_URI'), instance=environ.get('INSTANCE_NAME'))
+    cache = gira.CacheObject(dburi=environ.get('SQLALCHEMY_DATABASE_URI'),
+        instance=environ.get('INSTANCE_NAME'))
 
     vpn = environ.get('VPN_HOST')
 
-    server = GiraServer(cache=cache, 
+    server = gira.GiraServer(cache=cache, 
                         password=environ.get('USERNAME'),
                         username=environ.get('PASSWORD'),
                         gira_username=environ.get('GIRA_USERNAME'),
@@ -39,18 +42,14 @@ def main_exec():
     
     # log.debug(server.functions.uids['a01c'].location)
 
-    # serviceCallback =  'https://{callbackserver}/giraapi/function'.format(callbackserver=callbackserver)
-    # valueCallback = 'https://{callbackserver}/giraapi/value'.format(callbackserver=callbackserver)
-    # server.set_callaback(serviceCallback,valueCallback)
-    #
-    # time.sleep(3)
-    # server.delete_callback()
+    serviceCallback =  'https://{callbackserver}/giraapi/function'.format(callbackserver=callbackserver)
+    valueCallback = 'https://{callbackserver}/giraapi/value'.format(callbackserver=callbackserver)
+    server.set_callaback(serviceCallback,valueCallback)
+
+    time.sleep(3)
+    server.delete_callback()
     server.invalidate_cache()
     log.debug(f'ended')
-    
-    myObject = CacheObject(dburi="sqlite:////tmp/gira.db")
-    myObject.someSetting = 'Value'
-
         
 if __name__ == '__main__':
     main_exec()

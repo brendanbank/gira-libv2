@@ -1,89 +1,47 @@
 '''
-The Gira module is a module to interact with a Gira X1 or Homeserver's REST API.
 
-.. highlight:: python
-.. code-block:: python
+############################################################
+Welcome to Gira lib v2's documentation!
+############################################################
 
-    """
-    This code block expects the following environment variables
-    to be set. You can create a .env file including the 
-    format below main directory where this script is run to load
-    the environment variables.
+This is second version to the python library I created to interact with my X1/S1 Gira server. This library implements the 
+full scope of the REST interface as described by the 
+`Gira IoT REST API Documentation <https://github.com/brendanbank/gira-libv2/blob/c8993841cf787944a9087aa905c05484d40ae7cd/GiraDocumentation/Gira_IoT_REST_API_v2_EN.pdf>`__
 
-    DEBUG=<True|False>
-    HOSTNAME=<local LAN IP address of your X1>
-    USERNAME=<username of the X1>
-    PASSWORD=<password of the X1>
-    SQLALCHEMY_DATABASE_URI=<database URI>
-    GIRA_USERNAME=<username of the https://geraeteportal.gira.de/ portal>
-    GIRA_PASSWORD=<pasword of the https://geraeteportal.gira.de/ portal>
-    VPN_HOST=<url to your X1 link through the Gira S1>
-    INSTANCE_NAME=<instance name, used for storing your key variables 
-        (cookies, authorization keys) in your persistent cache>
-    
-    The VPN_HOST has the following sturcture
-    https://http.httpaccess.net/[serviceId]/httpu://[local LAN ip address of your X1]
-    
-    It can be found in your S1 configuration on https://geraeteportal.gira.de/
+A couple of features:
 
-    """
+* Login through the S1 remote access functionality
+* Download configuration and create a internal memory structure to get and set values on the X1.
+
+**VPN Login:**
 
 
-    import logging, sys, time
-    from os import environ
-    log = logging.getLogger(__name__)
+.. image:: https://raw.githubusercontent.com/brendanbank/gira-libv2/9b4ab1e3f3ed67b62e4f1ecf36bf35ff6a9d8ed9/GiraDocumentation/GIRA_VPN_Access.png
+  :width: 900
+  
+ 
+#.  The module tries to login to https://geraeteportal.gira.de/ with your username and password.
+#.  A cookie (from httpaccess.net) is returned for the the link VPN link provided that was requested in the previous step.
+    You can see these links when you login to the geraeteportal.gira.de and go to you S1 device. Click on Links
+    and you should find the links you can go visit through the S1. Find the link to the X1 device (it should be 
+    pre-programed. If you crearte it).  Note that you have to select the link with the 'HTTPS without certificate check' 
+    enabled. The X1 web server security certificate is signed by the 'Gira CA' Certificate Authority which is not
+    trusted by most browsers.
     
-    import gira
-    from dotenv import load_dotenv
-    load_dotenv()
+    The link has the following structure.
     
-    logging.basicConfig( 
-            format='%(asctime)s %(name)s.%(funcName)s(%(lineno)s): %(message)s',
-            stream=sys.stderr)
-    logging.getLogger().setLevel(logging.DEBUG)
-    
+        https://http.httpaccess.net/[serviceId]/**httpu:**//[local LAN ip address of your X1]
         
-    def main_exec():
-        log.debug(f'started')
-        
-        cache = gira.CacheObject(dburi=environ.get('SQLALCHEMY_DATABASE_URI'),
-            instance=environ.get('INSTANCE_NAME'))
-    
-        vpn = environ.get('VPN_HOST')
-    
-        server = gira.GiraServer(cache=cache, 
-                            password=environ.get('USERNAME'),
-                            username=environ.get('PASSWORD'),
-                            gira_username=environ.get('GIRA_USERNAME'),
-                            gira_password=environ.get('GIRA_PASSWORD'),
-                            hostname=environ.get('HOSTNAME'),
-                            vpn=vpn,
-                            refresh=True)
-        
-        server.vpn_login()
-        server.authenticate()
-        logging.getLogger().setLevel(logging.INFO)
-    
-        server.get_device_config()
-        
-        callbackserver = environ.get('CALLBACK_SERVER')
-        
-        
-        # log.debug(server.functions.get_all())
-        
-        # log.debug(server.functions.uids['a01c'].location)
-    
-        serviceCallback =  'https://{callbackserver}/giraapi/function'.format(callbackserver=callbackserver)
-        valueCallback = 'https://{callbackserver}/giraapi/value'.format(callbackserver=callbackserver)
-        server.set_callaback(serviceCallback,valueCallback)
-    
-        time.sleep(3)
-        server.delete_callback()
-        server.invalidate_cache()
-        log.debug(f'ended')
-            
-    if __name__ == '__main__':
-        main_exec()
+    Note the **'httpu'** if you link has 'http' (without the 'u') your application may not be able to login. As the
+    httpaccess.net portal expects a ssl certificate were the Certificate Authority is known. 
+#.  Now that you have a authentication Cookie from httpaccess.net you can use this cookie to connect to the vpn link.
+    and login to your X1/Homeserver. This is done with the username of the device itself. Not with the credientials
+    of the geraeteportal.gira.de portal.
+#.  The X1 will return a authentication token that you can use for future logins.
+
+
+
+
 
 '''
 

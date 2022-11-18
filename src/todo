@@ -1,0 +1,5 @@
+Todo:
+
+* Invalidate the object when you invalidate the cache.
+* Make the code more bullet proof so it does not only follow the happy path.
+* rename some of the methods to make the private.
