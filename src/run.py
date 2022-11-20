@@ -48,7 +48,6 @@ def main_exec():
 
     time.sleep(3)
     server.delete_callback()
-    server.invalidate_cache()
     log.debug(f'ended')
         
 if __name__ == '__main__':

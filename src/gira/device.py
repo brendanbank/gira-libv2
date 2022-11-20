@@ -563,7 +563,6 @@ class Function(object):
             self.dataPoints.append(datapoint)
             datapoint.function = self
             self.dp_uids[datapoint.uid] = datapoint
-            log.debug(f'datapoint added {datapoint}')
 
 class Location(object):
     def __init__(self,config,parent=None):
