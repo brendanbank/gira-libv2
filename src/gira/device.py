@@ -118,6 +118,7 @@ class GiraServer(object):
         GiraServer.get_device_config retrieves the configuration from the server or from the cache.
         
         :param refresh: boolean if True it will ignore the cache in the database and fetch the configuration from the server and store it in the cache.
+        :returns: DeviceConfig object with configuration of the device or False if the fetching of the device configuration fails. 
         '''
         
         
@@ -148,7 +149,7 @@ class GiraServer(object):
         GiraServer.version retrieves the configuration version from the server or from the cache.
 
         :param refresh: boolean if True it will ignore the cache in the database and fetch the version from the server and store it in the cache.
-        '''
+        :returns: config version of False'''
         
         version = self.cache.config_version
         
@@ -242,6 +243,7 @@ class GiraServer(object):
         Get the type of server (identity) from the X1/Home server.
         
         :param refresh: boolean if True it will ignore the cache in the database and fetch the setting from the server and store it in the cache.
+        :returns: True of False
         '''
         
         if (not refresh and self.cache.devicetype):
@@ -267,6 +269,13 @@ class GiraServer(object):
             return(False)
 
     def put_uid(self,uid,value):
+        '''
+        put_uid will update a uid with a value and sends it as a http put command to the device.
+        :param uid: uid from the data point.
+        :param value: data point value to be set 
+        :returns: True of False
+        '''
+        
         url = self.DEVICEURLS['PUT_UID'].format(host=self.cache.vpn_hostname or self.cache.hostname, token=self.cache.token)
         data = {"values": [
                 {"uid": uid,
@@ -282,6 +291,12 @@ class GiraServer(object):
             return(False)
 
     def get_uid(self,uid):
+        '''
+        get_uid pull retreive the current value of the data point of function.
+        
+        :param uid: uid from the data point or function.
+        :returns: data dict or None
+        '''
         log.debug(f'try to fetch {uid}')
         url = self.DEVICEURLS['GET_UID'].format(host=self.cache.vpn_hostname or self.cache.hostname, uid=uid, token=self.cache.token)
         (data,status_code) = self._get(url)
@@ -298,6 +313,7 @@ class GiraServer(object):
         VPN login (see separate documentation)
         
         :param refresh: boolean if True it will ignore the cache in the database and fetch the setting from the server and store it in the cache.
+        :returns: True of False
         '''
         
         if not self.cache.vpn:
@@ -348,6 +364,12 @@ class GiraServer(object):
     
     
     def vpn_connect(self, refresh=False):
+        '''
+        vpn_connect will try to connect to the VPN service of Gira and validates the Cookie (and refreshes the cookie)
+        
+        :param refresh: does not pull take the cookie from the Cache object but fetches it from the Gira VPN service.
+        :returns: cookie dict or None
+        '''
         # re-login to refresh cookie
         
         if not (self.cache.cookie):
@@ -532,8 +554,54 @@ class Datapoint(object):
         return self.function.device.put_uid(self.uid, str(value))
 
 class Function(object):
+    '''
+    Function takes a GiraServer object and the device configuration (dict) as an argument. A Function consist of
+    the Function characteristics itself and the Datapoints
+    
+    :param config: (see example)
+    :param device: GiraServer object
+
+
+    .. highlight:: python
+    .. code-block:: python
+    
+         EXAMPLE (JSON) Configuration snippet 
+
+          {
+         "channelType" : "de.gira.schema.channels.KNX.Dimmer",
+         "dataPoints" : [
+            {
+               "canEvent" : true,
+               "canRead" : true,
+               "canWrite" : true,
+               "name" : "OnOff",
+               "uid" : "a002"
+            },
+            {
+               "canEvent" : true,
+               "canRead" : true,
+               "canWrite" : true,
+               "name" : "Shift",
+               "uid" : "a003"
+            },
+            {
+               "canEvent" : true,
+               "canRead" : true,
+               "canWrite" : true,
+               "name" : "Brightness",
+               "uid" : "a004"
+            }
+         ],
+         "displayName" : "hanglamp entree",
+         "functionType" : "de.gira.schema.functions.KNX.Light",
+         "uid" : "a001"
+      },    
+    '''
     
     def __init__(self,config,device):
+        '''
+        
+        '''
 
         self.functionType = config['functionType']
         self.channelType = config['channelType']
@@ -642,19 +710,27 @@ class DeviceConfig(object):
         
 
     def uid(self,uid):
-        """returns the gira.device.Datapoint or gira.device.Function based on the uid.
+        """
+        returns the gira.device.Datapoint or gira.device.Function based on the uid.
+        
+        :param uid: uid of the Datapoint or Function
         """
         return self.uids[uid]
 
 
     def get_all (self):
-        """Fetch all gira.device.Datapoint from the X1 server
         """
+        Fetch all gira.device.Datapoint values from the X1 server
+                """
         for function_uid in self.function_uids:
             self.function_uids[function_uid].get()
 
     def update_uid (self,uid,data):
-        """update gira.device.Datapoint with a value.
+        """
+        update gira.device.Datapoint with a value.
+        
+        :param uid: uid from the data point.
+        :param value: data point value to be set 
         """
         if uid in self.uids:
             self.uids[uid].update(data)

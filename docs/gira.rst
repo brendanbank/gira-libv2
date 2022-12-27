@@ -8,7 +8,7 @@ gira.device module
    :members:
    :undoc-members:
    :show-inheritance: 
-   :exclude-members: Datapoint, Function, Location, Trades
+   :exclude-members: Location, Trades
 
 gira.cache module
 ------------------------------------

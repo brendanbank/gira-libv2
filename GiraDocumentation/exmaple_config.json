@@ -1,0 +1,7663 @@
+{
+	"functions": [
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a002"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a003"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a004"
+				}
+			],
+			"displayName": "hanglamp entree",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a001"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a006"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a007"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a008"
+				}
+			],
+			"displayName": "spots     entree",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a005"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a00a"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a00b"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a00c"
+				}
+			],
+			"displayName": "wand     entree",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a009"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a00e"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a00f"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a00g"
+				}
+			],
+			"displayName": "hanglamp gang",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a00d"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a00i"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a00j"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a00k"
+				}
+			],
+			"displayName": "spots        gang",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a00h"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a00m"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a00n"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a00o"
+				}
+			],
+			"displayName": "spot kast",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a00l"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a00q"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a00r"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a00s"
+				}
+			],
+			"displayName": "hanglamp toilet hal",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a00p"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a00u"
+				}
+			],
+			"displayName": "scene entree/gang",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "5"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a00t"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a00w"
+				}
+			],
+			"displayName": "entree/gang uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a00v"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a00y"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a00z"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a010"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a011"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a012"
+				}
+			],
+			"displayName": "technische ruimte",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a00x"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a014"
+				}
+			],
+			"displayName": "voordeur",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Op slot"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Open"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a013"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a016"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a017"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a018"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a015"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a01a"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a01b"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a01c"
+				}
+			],
+			"displayName": "eiland",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a019"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a01e"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a01f"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a01g"
+				}
+			],
+			"displayName": "nis",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a01d"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a01i"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a01j"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a01k"
+				}
+			],
+			"displayName": "wand",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a01h"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a01m"
+				}
+			],
+			"displayName": "wcd",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a01l"
+		},
+		{
+			"channelType": "de.gira.schema.channels.BlindWithPos",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Step-Up-Down",
+					"uid": "a01o"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Up-Down",
+					"uid": "a01p"
+				}
+			],
+			"displayName": "jaloezie",
+			"functionType": "de.gira.schema.functions.Covering",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a01n"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a01r"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a01s"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a01t"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a01u"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a01v"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a01q"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a01x"
+				}
+			],
+			"displayName": "scene keuken",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "6"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a01w"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a01z"
+				}
+			],
+			"displayName": "keuken uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a01y"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a021"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a022"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a023"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a020"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a025"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a026"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a027"
+				}
+			],
+			"displayName": "spots kast",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a024"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a029"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a02a"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a02b"
+				}
+			],
+			"displayName": "spots haard",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a028"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a02d"
+				}
+			],
+			"displayName": "hanglamp",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a02c"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a02f"
+				}
+			],
+			"displayName": "wcd links",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a02e"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a02h"
+				}
+			],
+			"displayName": "wcd rechts",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a02g"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a02j"
+				}
+			],
+			"displayName": "wcd vloer",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a02i"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a02l"
+				}
+			],
+			"displayName": "wcd wand",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a02k"
+		},
+		{
+			"channelType": "de.gira.schema.channels.BlindWithPos",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Step-Up-Down",
+					"uid": "a02n"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Up-Down",
+					"uid": "a02o"
+				}
+			],
+			"displayName": "jaloezie rechts",
+			"functionType": "de.gira.schema.functions.Covering",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a02m"
+		},
+		{
+			"channelType": "de.gira.schema.channels.BlindWithPos",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Step-Up-Down",
+					"uid": "a02q"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Up-Down",
+					"uid": "a02r"
+				}
+			],
+			"displayName": "jaloezie midden",
+			"functionType": "de.gira.schema.functions.Covering",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a02p"
+		},
+		{
+			"channelType": "de.gira.schema.channels.BlindWithPos",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Step-Up-Down",
+					"uid": "a02t"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Up-Down",
+					"uid": "a02u"
+				}
+			],
+			"displayName": "jaloezie links",
+			"functionType": "de.gira.schema.functions.Covering",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a02s"
+		},
+		{
+			"channelType": "de.gira.schema.channels.BlindWithPos",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Step-Up-Down",
+					"uid": "a02w"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Up-Down",
+					"uid": "a02x"
+				}
+			],
+			"displayName": "alle",
+			"functionType": "de.gira.schema.functions.Covering",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a02v"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a02z"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a030"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a031"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a032"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a033"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a02y"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a035"
+				}
+			],
+			"displayName": "scene zitkamer",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "7"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a034"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a037"
+				}
+			],
+			"displayName": "zitkamer uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a036"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a039"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a03a"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a03b"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a038"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a03d"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a03e"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a03f"
+				}
+			],
+			"displayName": "hanglamp",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a03c"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a03h"
+				}
+			],
+			"displayName": "wcd",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a03g"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a03j"
+				}
+			],
+			"displayName": "wcd vloer",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a03i"
+		},
+		{
+			"channelType": "de.gira.schema.channels.BlindWithPos",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Step-Up-Down",
+					"uid": "a03l"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Up-Down",
+					"uid": "a03m"
+				}
+			],
+			"displayName": "jaloezie",
+			"functionType": "de.gira.schema.functions.Covering",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a03k"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a03o"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a03p"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a03q"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a03r"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a03s"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a03n"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a03u"
+				}
+			],
+			"displayName": "scene leeskamer",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "8"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a03t"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a03w"
+				}
+			],
+			"displayName": "leeskamer uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a03v"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a03y"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a03z"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a040"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a03x"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a042"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a043"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a044"
+				}
+			],
+			"displayName": "hanglamp",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a041"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a046"
+				}
+			],
+			"displayName": "wcd",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a045"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a048"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a049"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a04a"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a04b"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a04c"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a047"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a04e"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a04f"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a04g"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a04d"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a04i"
+				}
+			],
+			"displayName": "hanglamp",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a04h"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a04k"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a04l"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a04m"
+				}
+			],
+			"displayName": "richt spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a04j"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a04o"
+				}
+			],
+			"displayName": "wcd",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a04n"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a04q"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a04r"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a04s"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a04t"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a04u"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a04p"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a04w"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a04x"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a04y"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a04v"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a050"
+				}
+			],
+			"displayName": "spiegel",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a04z"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a052"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a053"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a054"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a055"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a056"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a051"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a058"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a059"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a05a"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a057"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a05c"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a05d"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a05e"
+				}
+			],
+			"displayName": "bed ombouw",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a05b"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a05g"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a05h"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a05i"
+				}
+			],
+			"displayName": "spots doorloop",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a05f"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a05k"
+				}
+			],
+			"displayName": "bed links",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a05j"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a05m"
+				}
+			],
+			"displayName": "bed rechts",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a05l"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a05o"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a05p"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a05q"
+				}
+			],
+			"displayName": "inloopkast",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a05n"
+		},
+		{
+			"channelType": "de.gira.schema.channels.BlindWithPos",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Step-Up-Down",
+					"uid": "a05s"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Up-Down",
+					"uid": "a05t"
+				}
+			],
+			"displayName": "jaloezie rechts",
+			"functionType": "de.gira.schema.functions.Covering",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a05r"
+		},
+		{
+			"channelType": "de.gira.schema.channels.BlindWithPos",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Step-Up-Down",
+					"uid": "a05v"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Up-Down",
+					"uid": "a05w"
+				}
+			],
+			"displayName": "jaloezie links",
+			"functionType": "de.gira.schema.functions.Covering",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a05u"
+		},
+		{
+			"channelType": "de.gira.schema.channels.BlindWithPos",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Step-Up-Down",
+					"uid": "a05y"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Up-Down",
+					"uid": "a05z"
+				}
+			],
+			"displayName": "alle",
+			"functionType": "de.gira.schema.functions.Covering",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a05x"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a061"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a062"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a063"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a064"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a065"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a060"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a067"
+				}
+			],
+			"displayName": "scene master slaapkamer",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "1"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a066"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a069"
+				}
+			],
+			"displayName": "master slaapkamer uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a068"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a06b"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a06c"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a06d"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a06a"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a06f"
+				}
+			],
+			"displayName": "spiegel",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a06e"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a06h"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a06i"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a06j"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a06k"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a06l"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a06g"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a06n"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a06o"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a06p"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a06m"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a06r"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a06s"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a06t"
+				}
+			],
+			"displayName": "wand",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a06q"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a06v"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a06w"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a06x"
+				}
+			],
+			"displayName": "bordes",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a06u"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a06z"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a070"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a071"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a072"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a073"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a06y"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a075"
+				}
+			],
+			"displayName": "scene overloop",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "9"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a074"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a077"
+				}
+			],
+			"displayName": "overloop",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a076"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a079"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a07a"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a07b"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a078"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.Dimmer",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a07d"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Shift",
+					"uid": "a07e"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Brightness",
+					"uid": "a07f"
+				}
+			],
+			"displayName": "spots",
+			"functionType": "de.gira.schema.functions.KNX.Light",
+			"parameters": [
+				{
+					"key": "ButtonTimeout",
+					"set": "Visu",
+					"value": "0.4"
+				},
+				{
+					"key": "DefaultShift",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a07c"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a07h"
+				}
+			],
+			"displayName": "dak terras",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a07g"
+		},
+		{
+			"channelType": "de.gira.schema.channels.KNX.HeatingCoolingSwitchable",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Current",
+					"uid": "a07j"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Set-Point",
+					"uid": "a07k"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Mode",
+					"uid": "a07l"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Status",
+					"uid": "a07m"
+				},
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Heating",
+					"uid": "a07n"
+				}
+			],
+			"displayName": "thermostaat",
+			"functionType": "de.gira.schema.functions.KNX.HeatingCooling",
+			"parameters": [
+				{
+					"key": "HeatCool",
+					"set": "Visu",
+					"value": "Heating"
+				},
+				{
+					"key": "SetPointRangeMax",
+					"set": "Visu",
+					"value": "30"
+				},
+				{
+					"key": "SetPointRangeMin",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "StatusType",
+					"set": "Visu",
+					"value": "Mode"
+				},
+				{
+					"key": "StepSize",
+					"set": "Visu",
+					"value": "0.5"
+				}
+			],
+			"uid": "a07i"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a07p"
+				}
+			],
+			"displayName": "gevel voordeur",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a07o"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a07r"
+				}
+			],
+			"displayName": "gevel achterdeur",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a07q"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a07t"
+				}
+			],
+			"displayName": "gevel garage",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a07s"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a07v"
+				}
+			],
+			"displayName": "tuin achter",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a07u"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a07x"
+				}
+			],
+			"displayName": "hele tuin",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a07w"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a07z"
+				}
+			],
+			"displayName": "dak terras",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a07y"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a081"
+				}
+			],
+			"displayName": "Bew.melder uitschakelen",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a080"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a083"
+				}
+			],
+			"displayName": "poort open",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "On"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a082"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a085"
+				}
+			],
+			"displayName": "poort dicht",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "On"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a084"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a087"
+				}
+			],
+			"displayName": "scene basis",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "1"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a086"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a089"
+				}
+			],
+			"displayName": "scene avond",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "2"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a088"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a08b"
+				}
+			],
+			"displayName": "scene ochtend",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "3"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a08a"
+		},
+		{
+			"channelType": "de.gira.schema.channels.SceneControl",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Scene",
+					"uid": "a08d"
+				}
+			],
+			"displayName": "scene gezellig",
+			"functionType": "de.gira.schema.functions.Scene",
+			"parameters": [
+				{
+					"key": "CanLearn",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Scene",
+					"set": "Visu",
+					"value": "4"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				}
+			],
+			"uid": "a08c"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a08f"
+				}
+			],
+			"displayName": "scene's uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a08e"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a08h"
+				}
+			],
+			"displayName": "hele huis uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a08g"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a08j"
+				}
+			],
+			"displayName": "begane grond uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a08i"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a08l"
+				}
+			],
+			"displayName": "verdieping uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a08k"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Trigger",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Trigger",
+					"uid": "a08n"
+				}
+			],
+			"displayName": "opbouw uit",
+			"functionType": "de.gira.schema.functions.Trigger",
+			"parameters": [
+				{
+					"key": "Color",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Off"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Text",
+					"set": "Visu",
+					"value": ""
+				}
+			],
+			"uid": "a08m"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Switch",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "OnOff",
+					"uid": "a08p"
+				}
+			],
+			"displayName": "status ketel",
+			"functionType": "de.gira.schema.functions.Switch",
+			"parameters": [
+				{
+					"key": "Command",
+					"set": "Visu",
+					"value": "Toggle"
+				},
+				{
+					"key": "OffAction",
+					"set": "Visu",
+					"value": "Uitschakelen"
+				},
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "Uit"
+				},
+				{
+					"key": "OnAction",
+					"set": "Visu",
+					"value": "Inschakelen"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "Aan"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowStatus",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "Button"
+				}
+			],
+			"uid": "a08o"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a08r"
+				}
+			],
+			"displayName": "klep bijkeuken",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a08q"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a08t"
+				}
+			],
+			"displayName": "klep keuken",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a08s"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a08v"
+				}
+			],
+			"displayName": "klep zitkamer 1",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a08u"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a08x"
+				}
+			],
+			"displayName": "klep zitkamer 2",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a08w"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a08z"
+				}
+			],
+			"displayName": "klep leeskamer",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a08y"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a091"
+				}
+			],
+			"displayName": "klep slaapkamer 2",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a090"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a093"
+				}
+			],
+			"displayName": "klep kl badkamer",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a092"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a095"
+				}
+			],
+			"displayName": "klep master badkamer",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a094"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a097"
+				}
+			],
+			"displayName": "klep master slaapkamer",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a096"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a099"
+				}
+			],
+			"displayName": "klep slaapkamer 1",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a098"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a09b"
+				}
+			],
+			"displayName": "klep overloop",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a09a"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Percent",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Percent",
+					"uid": "a09d"
+				}
+			],
+			"displayName": "klep verblijfsruimte",
+			"functionType": "de.gira.schema.functions.PercentValue",
+			"parameters": [
+				{
+					"key": "CanChange",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Maximum",
+					"set": "Visu",
+					"value": "100"
+				},
+				{
+					"key": "Minimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "ShowCurrentValue",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "ShowTimer",
+					"set": "Visu",
+					"value": "True"
+				},
+				{
+					"key": "Type",
+					"set": "Visu",
+					"value": "0..100"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "%"
+				},
+				{
+					"key": "UnusedMaximum",
+					"set": "Visu",
+					"value": "255"
+				},
+				{
+					"key": "UnusedMinimum",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "UnusedStepSize",
+					"set": "Visu",
+					"value": "10"
+				},
+				{
+					"key": "UnusedValue",
+					"set": "Visu",
+					"value": "0"
+				},
+				{
+					"key": "Value",
+					"set": "Visu",
+					"value": "0"
+				}
+			],
+			"uid": "a09c"
+		},
+		{
+			"channelType": "de.gira.schema.channels.DWord",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "DWord",
+					"uid": "a09f"
+				}
+			],
+			"displayName": "zon midden",
+			"functionType": "de.gira.schema.functions.NumericUnsignedStatus",
+			"parameters": [
+				{
+					"key": "Description",
+					"set": "Visu",
+					"value": ""
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "  lux"
+				}
+			],
+			"uid": "a09e"
+		},
+		{
+			"channelType": "de.gira.schema.channels.DWord",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "DWord",
+					"uid": "a09h"
+				}
+			],
+			"displayName": "zon links",
+			"functionType": "de.gira.schema.functions.NumericUnsignedStatus",
+			"parameters": [
+				{
+					"key": "Description",
+					"set": "Visu",
+					"value": ""
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "  lux"
+				}
+			],
+			"uid": "a09g"
+		},
+		{
+			"channelType": "de.gira.schema.channels.DWord",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "DWord",
+					"uid": "a09j"
+				}
+			],
+			"displayName": "zon rechts",
+			"functionType": "de.gira.schema.functions.NumericUnsignedStatus",
+			"parameters": [
+				{
+					"key": "Description",
+					"set": "Visu",
+					"value": ""
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "  lux"
+				}
+			],
+			"uid": "a09i"
+		},
+		{
+			"channelType": "de.gira.schema.channels.DWord",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "DWord",
+					"uid": "a09l"
+				}
+			],
+			"displayName": "schemering",
+			"functionType": "de.gira.schema.functions.NumericUnsignedStatus",
+			"parameters": [
+				{
+					"key": "Description",
+					"set": "Visu",
+					"value": ""
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "  lux"
+				}
+			],
+			"uid": "a09k"
+		},
+		{
+			"channelType": "de.gira.schema.channels.DWord",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "DWord",
+					"uid": "a09n"
+				}
+			],
+			"displayName": "temperatuur",
+			"functionType": "de.gira.schema.functions.NumericUnsignedStatus",
+			"parameters": [
+				{
+					"key": "Description",
+					"set": "Visu",
+					"value": ""
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "  C"
+				}
+			],
+			"uid": "a09m"
+		},
+		{
+			"channelType": "de.gira.schema.channels.DWord",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "DWord",
+					"uid": "a09p"
+				}
+			],
+			"displayName": "wind",
+			"functionType": "de.gira.schema.functions.NumericUnsignedStatus",
+			"parameters": [
+				{
+					"key": "Description",
+					"set": "Visu",
+					"value": ""
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				},
+				{
+					"key": "Unit",
+					"set": "Visu",
+					"value": "  m/s"
+				}
+			],
+			"uid": "a09o"
+		},
+		{
+			"channelType": "de.gira.schema.channels.Binary",
+			"dataPoints": [
+				{
+					"canEvent": true,
+					"canRead": true,
+					"canWrite": true,
+					"name": "Binary",
+					"uid": "a09r"
+				}
+			],
+			"displayName": "regen",
+			"functionType": "de.gira.schema.functions.BinaryStatus",
+			"parameters": [
+				{
+					"key": "OffColor",
+					"set": "Visu",
+					"value": "Orange"
+				},
+				{
+					"key": "OffText",
+					"set": "Visu",
+					"value": "het is droog"
+				},
+				{
+					"key": "OnColor",
+					"set": "Visu",
+					"value": "Grey"
+				},
+				{
+					"key": "OnText",
+					"set": "Visu",
+					"value": "het regent"
+				},
+				{
+					"key": "ShowOnHomeScreen",
+					"set": "Visu",
+					"value": "False"
+				}
+			],
+			"uid": "a09q"
+		}
+	],
+	"locations": [
+		{
+			"displayName": "Begane grond",
+			"locationType": "Floor",
+			"locations": [
+				{
+					"displayName": "entree/gang",
+					"functions": [
+						"a001",
+						"a005",
+						"a009",
+						"a00d",
+						"a00h",
+						"a00l",
+						"a00p",
+						"a00t",
+						"a00v",
+						"a00x",
+						"a013"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "keuken",
+					"functions": [
+						"a015",
+						"a019",
+						"a01d",
+						"a01h",
+						"a01l",
+						"a01n",
+						"a01q",
+						"a01w",
+						"a01y"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "zitkamer",
+					"functions": [
+						"a020",
+						"a024",
+						"a028",
+						"a02c",
+						"a02e",
+						"a02g",
+						"a02i",
+						"a02k",
+						"a02m",
+						"a02p",
+						"a02s",
+						"a02v",
+						"a02y",
+						"a034",
+						"a036"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "leeskamer",
+					"functions": [
+						"a038",
+						"a03c",
+						"a03g",
+						"a03i",
+						"a03k",
+						"a03n",
+						"a03t",
+						"a03v"
+					],
+					"locationType": "Room"
+				}
+			]
+		},
+		{
+			"displayName": "1e Etage",
+			"locationType": "Floor",
+			"locations": [
+				{
+					"displayName": "Werkkamer",
+					"functions": [
+						"a03x",
+						"a041",
+						"a045",
+						"a047"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "Paul Slaapkamer",
+					"functions": [
+						"a04d",
+						"a04h",
+						"a04j",
+						"a04n",
+						"a04p"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "Paul Badkamer",
+					"functions": [
+						"a04v",
+						"a04z",
+						"a051"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "B&B Slaapkamer",
+					"functions": [
+						"a057",
+						"a05b",
+						"a05f",
+						"a05j",
+						"a05l",
+						"a05n",
+						"a05r",
+						"a05u",
+						"a05x",
+						"a060",
+						"a066",
+						"a068"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "B&B Badkamer",
+					"functions": [
+						"a06a",
+						"a06e",
+						"a06g"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "1e etage overloop",
+					"functions": [
+						"a06m",
+						"a06q",
+						"a06u",
+						"a06y",
+						"a074",
+						"a076"
+					],
+					"locationType": "Room"
+				}
+			]
+		},
+		{
+			"displayName": "2e Etage",
+			"locationType": "Floor",
+			"locations": [
+				{
+					"displayName": "2e etage overloop",
+					"functions": [
+						"a078"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "Werkkamer 2e etage",
+					"functions": [
+						"a07c",
+						"a07g",
+						"a07i"
+					],
+					"locationType": "Room"
+				}
+			]
+		},
+		{
+			"displayName": "Buiten",
+			"functions": [
+				"a082",
+				"a084"
+			],
+			"locationType": "Building",
+			"locations": [
+				{
+					"displayName": "Tuin",
+					"functions": [
+						"a07o",
+						"a07q",
+						"a07s",
+						"a07u",
+						"a07w",
+						"a07y",
+						"a080"
+					],
+					"locationType": "Room"
+				}
+			]
+		},
+		{
+			"displayName": "Scenes",
+			"functions": [
+				"a086",
+				"a088",
+				"a08a",
+				"a08c",
+				"a08e",
+				"a08g",
+				"a08i",
+				"a08k",
+				"a08m"
+			],
+			"locationType": "Room"
+		},
+		{
+			"displayName": "Technische Ruimte",
+			"functions": [
+				"a08o"
+			],
+			"locationType": "ControlCabinet"
+		},
+		{
+			"displayName": "diversen",
+			"locationType": "Room",
+			"locations": [
+				{
+					"displayName": "verwarming",
+					"functions": [
+						"a08q",
+						"a08s",
+						"a08u",
+						"a08w",
+						"a08y",
+						"a090",
+						"a092",
+						"a094",
+						"a096",
+						"a098",
+						"a09a",
+						"a09c"
+					],
+					"locationType": "Room"
+				},
+				{
+					"displayName": "weerstation",
+					"functions": [
+						"a09e",
+						"a09g",
+						"a09i",
+						"a09k",
+						"a09m",
+						"a09o",
+						"a09q"
+					],
+					"locationType": "Room"
+				}
+			]
+		}
+	],
+	"trades": [
+		{
+			"displayName": "Licht",
+			"functions": [
+				"a001",
+				"a005",
+				"a009",
+				"a00d",
+				"a00h",
+				"a00l",
+				"a00p",
+				"a013",
+				"a015",
+				"a019",
+				"a01d",
+				"a01h",
+				"a01l",
+				"a020",
+				"a024",
+				"a028",
+				"a02c",
+				"a02e",
+				"a02g",
+				"a02i",
+				"a02k",
+				"a038",
+				"a03c",
+				"a03g",
+				"a03i",
+				"a03x",
+				"a041",
+				"a045",
+				"a04d",
+				"a04h",
+				"a04j",
+				"a04n",
+				"a04v",
+				"a04z",
+				"a057",
+				"a05b",
+				"a05f",
+				"a05j",
+				"a05l",
+				"a05n",
+				"a06a",
+				"a06e",
+				"a06m",
+				"a06q",
+				"a06u",
+				"a078",
+				"a07c",
+				"a07g",
+				"a07o",
+				"a07q",
+				"a07s",
+				"a07u",
+				"a07w",
+				"a07y",
+				"a08o"
+			],
+			"tradeType": "Lighting"
+		},
+		{
+			"displayName": "Schakelen",
+			"functions": [
+				"a00v",
+				"a01y",
+				"a036",
+				"a03v",
+				"a068",
+				"a076",
+				"a082",
+				"a084",
+				"a08e",
+				"a08g",
+				"a08i",
+				"a08k",
+				"a08m"
+			],
+			"tradeType": "Switching"
+		},
+		{
+			"displayName": "Zonwering",
+			"functions": [
+				"a01n",
+				"a02m",
+				"a02p",
+				"a02s",
+				"a02v",
+				"a03k",
+				"a05r",
+				"a05u",
+				"a05x"
+			],
+			"tradeType": "Covering"
+		},
+		{
+			"displayName": "Temperatuur",
+			"functions": [
+				"a00x",
+				"a01q",
+				"a02y",
+				"a03n",
+				"a047",
+				"a04p",
+				"a051",
+				"a060",
+				"a06g",
+				"a06y",
+				"a07i"
+			],
+			"tradeType": "HVAC"
+		},
+		{
+			"displayName": "Sc\u00e8nes",
+			"functions": [
+				"a00t",
+				"a01w",
+				"a034",
+				"a03t",
+				"a066",
+				"a074",
+				"a086",
+				"a088",
+				"a08a",
+				"a08c"
+			],
+			"tradeType": "Scenes"
+		},
+		{
+			"displayName": "Tijdschakelklok",
+			"functions": [
+				"a080"
+			],
+			"tradeType": "Timer"
+		},
+		{
+			"displayName": "Veiligheid",
+			"tradeType": "Security"
+		},
+		{
+			"displayName": "Statusweergaven",
+			"functions": [
+				"a09e",
+				"a09g",
+				"a09i",
+				"a09k",
+				"a09m",
+				"a09o",
+				"a09q"
+			],
+			"tradeType": "Monitor"
+		},
+		{
+			"displayName": "Waardegever",
+			"functions": [
+				"a08q",
+				"a08s",
+				"a08u",
+				"a08w",
+				"a08y",
+				"a090",
+				"a092",
+				"a094",
+				"a096",
+				"a098",
+				"a09a",
+				"a09c"
+			],
+			"tradeType": "Control"
+		},
+		{
+			"displayName": "Sequenties",
+			"tradeType": "Sequences"
+		},
+		{
+			"displayName": "Logica",
+			"tradeType": "Logic"
+		},
+		{
+			"displayName": "Camera's",
+			"tradeType": "Cameras"
+		},
+		{
+			"displayName": "Multimedia",
+			"tradeType": "Multimedia"
+		},
+		{
+			"displayName": "IP-verbinding",
+			"tradeType": "Links"
+		}
+	],
+	"uid": "a0a0"
+}
+
